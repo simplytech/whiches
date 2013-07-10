@@ -1,6 +1,6 @@
 # Whiches
 
-Find executables in all the paths in $PATH.
+**Ruby gem to find executables in all the paths in $PATH.**
 
   Cross-platform way of finding executables in all the paths in $PATH.
   
