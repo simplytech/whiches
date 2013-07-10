@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+# Cross-platform way of finding an executable in all the paths in $PATH.
+
+require 'awesome_print'
+require 'whiches'
+
+ARGV.each do |exe|
+  ap Whiches.whiches(exe)
+end
+
+# ap Whiches.whiches('ruby')
+
+# Whiches.whiches('ruby').each do |l|
+  # puts l
+# end
+
