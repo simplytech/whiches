@@ -30,8 +30,9 @@
     
   This will show you that the first one that is found in the PATH is the one from Postgres, so if you want to get back your original one, you have to modify your PATH accordingly.  
 
-## URL 
+## URLs
 <https://github.com/simplytech/whiches>
+<https://rubygems.org/gems/whiches>
 
 ## Installation
 
