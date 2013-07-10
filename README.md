@@ -1,6 +1,31 @@
 # Whiches
 
-TODO: Write a gem description
+Find executables in all the paths in $PATH.
+
+  Cross-platform way of finding executables in all the paths in $PATH.
+  
+  This is similar to the Unix 'which' command, however, instead of finding the first
+  occurence of the executable in $PATH, it finds all occurences in $PATH.
+  This could be useful if you installed something that modified your PATH and now you're
+  executing a different version but can't figure out what happened.
+  Example:
+  On OS X, OpenSSL is installed in /usr/bin/openssl
+    % which openssl
+    ==> /usr/bin/openssl
+  After installing PostgreSQL:
+    % which openssl
+    ==> /Applications/Postgres.app/Contents/MacOS/bin/openssl
+  If you're trying to diagnose what happened, you can use:
+    % whiches openssl
+    ==>
+    [
+        [0] "/Applications/Postgres.app/Contents/MacOS/bin/openssl",
+        [1] "/usr/bin/openssl"
+    ]  
+  This will show you that the first one that is found in the PATH is the one from Postgres,
+  so if you want to get back your original one, you have to modify your PATH accordingly.  
+
+"https://github.com/simplytech/whiches"
 
 ## Installation
 
@@ -18,7 +43,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+whiches [executables]
 
 ## Contributing
 

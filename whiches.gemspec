@@ -30,7 +30,7 @@ Gem::Specification.new do |gem|
     This will show you that the first one that is found in the PATH is the one from Postgres,
     so if you want to get back your original one, you have to modify your PATH accordingly.  
   EOF
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/simplytech/whiches"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
