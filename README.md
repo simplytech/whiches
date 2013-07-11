@@ -32,6 +32,7 @@
 
 ## URLs
 <https://github.com/simplytech/whiches>
+
 <https://rubygems.org/gems/whiches>
 
 ## Installation
@@ -50,8 +51,16 @@ Or install it yourself as:
 
 ## Usage
 
-whiches [executables]
+### Command-line
 
+    whiches [executables]
+
+### Ruby method
+
+    paths = Whiches.whiches('ruby')
+
+  Returns an array of paths if found, otherwise returns nil.
+  
 ## License
 
 Copyright (c) 2013 Alain Achkar
