@@ -38,4 +38,5 @@ Gem::Specification.new do |gem|
   gem.name          = "whiches"
   gem.require_paths = ["lib"]
   gem.version       = Whiches::VERSION
+  gem.add_runtime_dependency 'awesome_print' # Only needed for the 'whiches' binary because I like my output to look awesome.  Not needed for Whiches#whiches.
 end
